@@ -1,0 +1,7 @@
+#+NAME: TODO
+
+* TODO Check and validate previous search
+:PROPERTIES:
+:CREATED:  [2025-07-22 Tue 16:02]
+:ID:       2dbec4cf-e16b-4b3c-bc8b-1132bea2a75a
+:END:

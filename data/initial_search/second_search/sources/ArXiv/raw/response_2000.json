@@ -1,0 +1,28 @@
+{
+    "feed": {
+        "@xmlns": "http://www.w3.org/2005/Atom",
+        "link": {
+            "@href": "http://arxiv.org/api/query?search_query%3D%28all%3A%22ontology%22%20OR%20all%3A%22knowledge%20graph%22%29%20AND%20%28all%3A%22llm%22%20OR%20all%3A%22language%20model%22%20OR%20all%3A%22generative%20AI%22%20OR%20all%3A%22transformer%20decoder%22%29%26id_list%3D%26start%3D2000%26max_results%3D2000",
+            "@rel": "self",
+            "@type": "application/atom+xml"
+        },
+        "title": {
+            "@type": "html",
+            "#text": "ArXiv Query: search_query=(all:\"ontology\" OR all:\"knowledge graph\") AND (all:\"llm\" OR all:\"language model\" OR all:\"generative AI\" OR all:\"transformer decoder\")&id_list=&start=2000&max_results=2000"
+        },
+        "id": "http://arxiv.org/api/cKknywpvsVg4AbeHIljV6WH9/Gs",
+        "updated": "2025-02-13T00:00:00-05:00",
+        "opensearch:totalResults": {
+            "@xmlns:opensearch": "http://a9.com/-/spec/opensearch/1.1/",
+            "#text": "1297"
+        },
+        "opensearch:startIndex": {
+            "@xmlns:opensearch": "http://a9.com/-/spec/opensearch/1.1/",
+            "#text": "2000"
+        },
+        "opensearch:itemsPerPage": {
+            "@xmlns:opensearch": "http://a9.com/-/spec/opensearch/1.1/",
+            "#text": "2000"
+        }
+    }
+}

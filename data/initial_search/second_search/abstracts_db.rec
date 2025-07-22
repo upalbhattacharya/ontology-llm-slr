@@ -1,0 +1,14 @@
+# -*- mode: rec -*-
+%rec: Entry
+%summary: Title,Year,Category,Relevant
+%mandatory: Title,Year,Category,Relevant
+%type: Relevant enum
++ YES (Relevant)
++ NO (Not Relevant)
++ REVIEW (Check again)
+%type: Year int
+
+Title: Analyzing Commonsense Emergence in Few-shot Knowledge Models
+Year: 2021
+Category: commonsense knowledge model
+Category: knowledge graph fine-tuning
