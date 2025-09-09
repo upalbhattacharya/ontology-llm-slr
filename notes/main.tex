@@ -152,19 +152,18 @@ articles, a seed list of articles is curated. The seed list consists of
 all 25 manually identified relevant articles as mentioned in
 Section \ref{subsec:keyword-selection} and of all relevant articles from the
 list of references in the systematic literature review in
-\citet{li2025LargeLanguageModels}. Articles from the citation list published
-after 2017 are considered. For each of these articles, manual inspection for
+\citet{li2025LargeLanguageModels}. Relevance is determinged by first
+considering articles published after 2017For each of these articles, manual inspection for
 keywords in their title, abstract or introduction is employed to determine
 relevance. After retaining only relevant articles from the citation list, the
 final seed list (after removal of duplicates) contains 60 articles.
 
-The initial list of articles
-obtained after curation from all sources and removal of duplicates is tested
-for the presence of articles from the seed list. If $90\%$ of the articles
-from the seed list are present in the curated initial list, the list is
-considered valid. Otherwise, we re-check the set of keywords, with special
-emphasis on keywords from articles in the seed list not captured in the
-initial list.
+The initial list of articles obtained after curation from all sources and
+removal of duplicates is tested for the presence of articles from the seed
+list. If $90\%$ of the articles from the seed list are present in the curated
+initial list, the list is considered valid. Otherwise, we re-check the set of
+keywords, with special emphasis on keywords from articles in the seed list not
+captured in the initial list.
 
 
 \bibliographystyle{splncs04nat}
