@@ -148,9 +148,15 @@ and the LLM keywords are:
 \label{subsec:seed-list}
 
 To validate whether the provided keywords and sources capture relevant
-articles, a seed list of articles is curated. The seed list is obtained by
-considering all 25 manually identified relevant articles as mentioned in
-Section \ref{subsec:keyword-selection}
+articles, a seed list of articles is curated. The seed list consists of 
+all 25 manually identified relevant articles as mentioned in
+Section \ref{subsec:keyword-selection} and of all relevant articles from the
+list of references in the systematic literature review in
+\citet{li2025LargeLanguageModels}. Articles from the citation list published
+after 2017 are considered. For each of these articles, manual inspection for
+keywords in their title, abstract or introduction is employed to determine
+relevance. After retaining only relevant articles from the citation list, the
+final seed list (after removal of duplicates) contains 60 articles.
 
 The initial list of articles
 obtained after curation from all sources and removal of duplicates is tested
