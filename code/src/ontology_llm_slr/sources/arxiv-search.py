@@ -9,11 +9,12 @@ import arxiv2bib
 
 client = arxiv.Client()
 search = arxiv.Search(query="all:ontolog* AND (all:LLM* OR all:language model*)")
-first_result = next(client.results(search))
-idx = os.path.basename(str(first_result))
+ids = []
 
-cli = arxiv2bib.Cli()
-cli.args.id = [idx]
-cli.run()
-cli.print_output()
-print(cli.args.id)
+for result in client.results(search):
+    ids.append(os.path.basename(str(result)))
+
+with open(
+    "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
+) as f:
+    f.writelines(ids)
