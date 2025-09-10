@@ -27,3 +27,6 @@ for paper in anthology.papers():
     ):
         papers.append((paper.full_id, paper.title))
         bib = bib + paper.bibtex(abstract=True)
+
+with open("~/Projects/ontology-llm-slr/code/sources/parts/acl.bib", "w") as f:
+    f.write(bib)
