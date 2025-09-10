@@ -12,7 +12,7 @@ search = arxiv.Search(query="all:ontolog* AND (all:LLM* OR all:language model*)"
 first_result = next(client.results(search))
 idx = os.path.basename(str(first_result))
 
-cli = arxiv2bib.Cli(args={"id"=idx})
+cli = arxiv2bib.Cli(args={"id": idx})
 cli.run()
 cli.print_output()
 print(cli.args.id)
