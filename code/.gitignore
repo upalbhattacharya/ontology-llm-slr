@@ -1,0 +1,9 @@
+.envrc
+.env
+.venv
+**/__pycache__/
+*.egg-info/
+*.egg
+*.swp
+**/.virtual_documents/
+
