@@ -26,7 +26,7 @@ for paper in anthology.papers():
         and (int(paper.year) >= 2018 and int(paper.year) <= 2025)
     ):
         papers.append((paper.full_id, paper.title))
-        bib = bib + paper.to_bibtex(with_abstract=True)
+        bib = bib + "\n" + paper.to_bibtex(with_abstract=True)
 
 with open("/home/upal/Projects/ontology-llm-slr/code/sources/parts/acl.bib", "w") as f:
     f.write(bib)
