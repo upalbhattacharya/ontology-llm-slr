@@ -23,10 +23,10 @@ for paper in anthology.papers():
                 re.search(r"llm*", abstract) or re.search(r"language model*", abstract)
             )
         )
-        and (int(paper.year) >= 2018 and int(paper.year) <= 2025)
+        and (int(paper.year) >= 2018 and int(paper.year <= 2025)
     ):
         papers.append((paper.full_id, paper.title))
         bib = bib + paper.to_bibtex(with_abstract=True)
 
-with open("~/Projects/ontology-llm-slr/code/sources/parts/acl.bib", "w") as f:
+with open("/home/upal/Projects/ontology-llm-slr/code/sources/parts/acl.bib", "w") as f:
     f.write(bib)
