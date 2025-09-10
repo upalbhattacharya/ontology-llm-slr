@@ -6,12 +6,13 @@ import os
 
 import arxiv
 import arxiv2bib
+import tqdm
 
 client = arxiv.Client()
 search = arxiv.Search(query="all:ontolog* AND (all:LLM* OR all:language model*)")
 ids = []
 
-for result in client.results(search):
+for result in tqdm.tqdm(client.results(search)):
     ids.append(os.path.basename(str(result)))
 
 with open(
