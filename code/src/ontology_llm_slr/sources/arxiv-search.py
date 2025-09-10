@@ -15,7 +15,7 @@ ids = []
 try:
     for result in tqdm.tqdm(client.results(search)):
         ids.append(os.path.basename(str(result)))
-except UnexpectedEmptyPageError e:
+except:
     with open(
         "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
     ) as f:
