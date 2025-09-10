@@ -13,4 +13,4 @@ first_result = next(client.results(search))
 idx = os.path.basename(str(first_result))
 
 cli = arxiv2bib.Cli(args=idx)
-print(cli())
+print(cli.run())
