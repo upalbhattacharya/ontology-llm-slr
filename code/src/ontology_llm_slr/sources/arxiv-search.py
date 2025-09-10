@@ -19,4 +19,4 @@ except:
     with open(
         "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
     ) as f:
-        f.writelines(idx + " " for idx in ids)
+        f.writelines(idx + "\n" for idx in ids)
