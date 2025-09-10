@@ -25,7 +25,6 @@ for paper in anthology.papers():
         )
         and (int(paper.year) >= 2018 and int(paper.year) <= 2025)
     ):
-        print(paper.year)
         papers.append((paper.full_id, paper.title))
         bib = bib + paper.to_bibtex(with_abstract=True)
 
