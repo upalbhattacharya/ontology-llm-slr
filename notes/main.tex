@@ -198,11 +198,32 @@ Hits: 1280 \newline
 \end{figure}
 
 \subsubsection{ACL Anthology}
-\label{subsubsec:cl}
+\label{subsubsec:acl}
 
 Hits: 395 \newline
 
 Querying done using the Python API
+
+\subsubsection{ACL Anthology}
+\label{subsubsec:acm}
+
+Hits: 7299
+
+\begin{figure}[H]
+\begin{lstlisting}
+[All: ontolog*]
+AND
+[
+  [All: llm*] OR
+  [All: language model*]
+]
+AND
+[E-Publication Date: (01/01/2018 TO 12/31/2025)]
+\end{lstlisting}
+  \label{fig:acm-query}
+  \caption{Search Query for ACM}
+\end{figure}
+
 
 \begin{itemize}
   \item \st{ACL Anthology}
