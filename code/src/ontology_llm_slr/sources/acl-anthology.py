@@ -18,4 +18,5 @@ for paper in anthology.papers():
         re.search(r"ontolog*", abstract)
         and (re.search(r"llm*", abstract) or re.search(r"language model*", abstract))
     ):
-        pass
+    print(paper.full_id, paper.title)
+        
