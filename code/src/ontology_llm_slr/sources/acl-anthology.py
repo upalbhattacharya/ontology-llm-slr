@@ -7,7 +7,8 @@ import re
 from acl_anthology import Anthology
 
 anthology = Anthology.from_repo()
-
+papers = []
+bib = ""
 for paper in anthology.papers():
     title = str(paper.title).lower()
     abstract = str(paper.abstract).lower()
@@ -24,4 +25,5 @@ for paper in anthology.papers():
         )
         and (paper.year >= 2018 and paper.year <= 2025)
     ):
-        print(paper.full_id, paper.title)
+        papers.append((paper.full_id, paper.title))
+        bib = bib + paper.bibtex(abstract=True)
