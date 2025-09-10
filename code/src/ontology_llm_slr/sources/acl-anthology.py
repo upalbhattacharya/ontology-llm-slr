@@ -12,7 +12,6 @@ bib = ""
 for paper in anthology.papers():
     title = str(paper.title).lower()
     abstract = str(paper.abstract).lower()
-    print(paper.year)
     if (
         (
             re.search(r"ontolog*", title)
