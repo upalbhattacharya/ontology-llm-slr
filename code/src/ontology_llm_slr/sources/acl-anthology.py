@@ -24,6 +24,7 @@ for paper in anthology.papers():
             )
         )
         and (int(paper.year) >= 2018 and int(paper.year) <= 2025)
+        and (paper.lang == "eng")
     ):
         print(paper.year)
         papers.append((paper.full_id, paper.title))
