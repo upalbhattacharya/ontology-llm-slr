@@ -3,6 +3,7 @@
 """Extracting Papers from ArXiv"""
 
 import os
+from time import sleep
 
 import arxiv
 import arxiv2bib
@@ -14,9 +15,11 @@ ids = []
 fullpaths = []
 
 try:
-    for result in tqdm.tqdm(client.results(search)):
+    for i, result in tqdm.tqdm(enumerate(client.results(search))):
         fullpaths.append(str(result))
         ids.append(os.path.basename(str(result)))
+        if i % 5 == 0:
+            sleep(3)
 except:
     with open(
         "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
