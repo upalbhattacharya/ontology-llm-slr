@@ -24,12 +24,23 @@ try:
         fullpaths.append(str(result))
         ids.append(os.path.basename(str(result)))
 except:
-    with open(
-        "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
-    ) as f:
-        f.writelines(idx + "\n" for idx in ids)
-    with open(
-        "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/full_https.txt",
-        "w",
-    ) as f:
-        f.writelines(idx + "\n" for idx in fullpaths)
+    break
+with open(
+    "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
+) as f:
+    f.writelines(idx + "\n" for idx in ids)
+with open(
+    "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/full_https.txt",
+    "w",
+) as f:
+    f.writelines(idx + "\n" for idx in fullpaths)
+
+with open(
+    "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
+) as f:
+    f.writelines(idx + "\n" for idx in ids)
+with open(
+    "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/full_https.txt",
+    "w",
+) as f:
+    f.writelines(idx + "\n" for idx in fullpaths)
