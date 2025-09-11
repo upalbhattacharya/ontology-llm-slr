@@ -18,13 +18,13 @@ search = arxiv.Search(
 ids = []
 fullpaths = []
 
-for result in tqdm.tqdm(client.results(search)):
-    try:
+try:
+    for result in tqdm.tqdm(client.results(search)):
         print(fullpaths)
         fullpaths.append(str(result))
         ids.append(os.path.basename(str(result)))
-    except:
-        break
+except:
+    pass
 with open(
     "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
 ) as f:
