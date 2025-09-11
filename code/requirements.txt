@@ -1,3 +1,5 @@
 acl-anthology>=0.5.3
 arxiv>=2.2.0
 arxiv2bib>=1.0.8
+asreview?>=2.1.1
+asreview-datatools>=1.4
