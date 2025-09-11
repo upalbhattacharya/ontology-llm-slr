@@ -257,15 +257,14 @@ parameters on the website in the API calls (sort order and number of
 responses). The API was utilized to return IDs until it did not find anymore
 for the provided query.
 
-\subsection{Conversion of bibtex to CSV}
+\subsection{Conversion}
 \label{subsec:bib-to-csv}
 
-CSV files are not provided by ScienceDirect (Section
-\ref{subsubsec:sciencedirect}), ACL Anthology (Section \ref{subsubsec:acl}),
-ACM Digital Library (Section \ref{subsubsec:acm}) and ArXiv (Section
-\ref{subsubsec:arxiv}) sources. For theses sources,
-\href{https://www.zotero.org}{Zotero} is used to convert their \verb|bibtex|
-files to CSV formats.
+\verb|bibtex| files of the retrieved articles from all sources were converted
+to CSV format using \href{https://www.zotero.org}{Zotero}. Not all sources
+have a provision to export searches as CSV files. Thus, for uniformity, the
+bibtex files were all converted using Zotero. This provided an initial pool of
+$10766$ papers.
 
 \subsection{Concatenation and deduplication}
 \label{subsec:concat-dedup}
