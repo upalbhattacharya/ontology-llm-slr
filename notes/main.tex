@@ -270,6 +270,9 @@ files to CSV formats.
 \subsection{Concatenation and deduplication}
 \label{subsec:concat-dedup}
 
+The individual CSV files of each source is combined using the `compose`
+utility of \href{https://zenodo.org/records/13374508}{ASReview Datatools}
+
 
 
 \subsection{Initial Screening: Removal of Conference Proceedings, Books, Book
@@ -289,13 +292,13 @@ considered valid. Otherwise, we re-evaluate the set of keywords, with special
 emphasis on keywords from articles in the seed list not captured in the
 initial list.
 
-The seed list consists of the 25 manually identified relevant articles as mentioned in
-Section \ref{subsec:keyword-selection} and of all relevant articles from the
-list of references in the systematic literature review in
+The seed list consists of the 25 manually identified relevant articles as
+mentioned in Section \ref{subsec:keyword-selection} and of all relevant
+articles from the list of references in the systematic literature review in
 \citet{li2025LargeLanguageModels}. Relevance is determined by considering
-articles published after 2017 and retaining only those articles that
-contain the selected keywords in their title, abstract or Introduction
-sections (done manually). Combining the relevant list of citations from
+articles published after 2017 and retaining only those articles that contain
+the selected keywords in their title, abstract or Introduction sections (done
+manually). Combining the relevant list of citations from
 \citet{li2025LargeLanguageModels} along with the 25 manually identified
 documents creates a seed list of 60 articles (after removal of duplicates).
 
