@@ -19,6 +19,7 @@ try:
         fullpaths.append(str(result))
         ids.append(os.path.basename(str(result)))
 except:
+    print(fullpaths)
     with open(
         "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
     ) as f:
