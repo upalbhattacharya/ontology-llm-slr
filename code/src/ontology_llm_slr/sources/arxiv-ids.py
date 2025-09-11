@@ -9,7 +9,7 @@ import arxiv
 import arxiv2bib
 import tqdm
 
-client = arxiv.Client(page_size=200, delay_seconds=10, num_retries=5)
+client = arxiv.Client(page_size=200, delay_seconds=10.0, num_retries=5)
 search = arxiv.Search(query="all:ontolog* AND (all:LLM* OR all:language model*)")
 ids = []
 fullpaths = []
