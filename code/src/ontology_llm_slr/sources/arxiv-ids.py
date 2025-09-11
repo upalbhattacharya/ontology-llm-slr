@@ -18,7 +18,7 @@ try:
     for i, result in tqdm.tqdm(enumerate(client.results(search))):
         fullpaths.append(str(result))
         ids.append(os.path.basename(str(result)))
-        if i % 5 == 0:
+        if i % 100 == 0:
             sleep(3)
 except:
     with open(
