@@ -9,20 +9,15 @@ import arxiv
 import arxiv2bib
 import tqdm
 
-client = arxiv.Client()
-search = arxiv.Search(
-    # query="all:ontolog* AND all:LLM* OR all:ontolog* AND all:(language model)*)",
-    query="all:ontolog*"
-)
+client = arxiv.Client(page_size=100, delay_seconds=5, num_retries=5)
+search = arxiv.Search(query="all:ontolog* AND (all:LLM* or ALL:language model*)")
 ids = []
 fullpaths = []
 
 try:
-    for i, result in tqdm.tqdm(enumerate(client.results(search))):
+    for result in tqdm.tqdm(client.results(search)):
         fullpaths.append(str(result))
         ids.append(os.path.basename(str(result)))
-        if i % 100 == 0:
-            sleep(3)
 except:
     with open(
         "/home/upal/Projects/ontology-llm-slr/code/sources/parts/arxiv/id_list.txt", "w"
