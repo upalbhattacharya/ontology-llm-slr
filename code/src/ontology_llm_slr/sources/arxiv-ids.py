@@ -20,6 +20,7 @@ fullpaths = []
 
 try:
     for result in tqdm.tqdm(client.results(search)):
+        print(fullpaths)
         fullpaths.append(str(result))
         ids.append(os.path.basename(str(result)))
 except:
