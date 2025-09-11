@@ -11,7 +11,7 @@ import tqdm
 
 client = arxiv.Client(page_size=900, delay_seconds=10.0, num_retries=5)
 search = arxiv.Search(
-    query='all:ontolog* AND all:LLM* OR all:ontolog* AND all:"language model*"',
+    query='all:ontolog* AND (all:LLM* OR all:"language model*")',
     sort_by=arxiv.SortCriterion.SubmittedDate,
     sort_order=arxiv.SortOrder.Descending,
     max_results=None,
