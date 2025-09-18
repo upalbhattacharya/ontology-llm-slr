@@ -262,6 +262,7 @@ The searched was done ``Anywhere''.
 \subsection{Conversion}
 \label{subsec:bib-to-csv}
 
+
 \verb|bibtex| files of the retrieved articles from all sources were converted
 to CSV format using \href{https://www.zotero.org}{Zotero}. Not all sources
 have a provision to export searches as CSV files. Thus, for uniformity, the
@@ -274,11 +275,15 @@ $10766$ papers.
 % The individual CSV files of each source is combined using the \verb|compose|
 % utility of \href{https://zenodo.org/records/13374508}{ASReview Datatools}
 
-\subsection{Deduplication}
+\subsection{Deduplication and Removal of irrelevant articles}
 \label{subsec:deduplication}
 
-Rayyan was used to identify and resolve duplicates. It identified 1390
-duplicates.
+\href{https://rayyan.ai}{Rayyan} and \href{https://www.zotero.org}{Zotero}
+were used to process the initial list of articles from all data
+sources. Deduplication was performed initially using the
+\href{https://chenglongma.com/zoplicate/}{zoplicate} plugin of Zotero and
+thereafter using Rayyan. Conference proceedings, books, book chapters and some
+reviews were removed using keyword-based matching.
 
 \subsection{Initial Screening}
 \label{subsec:initial-screening}
