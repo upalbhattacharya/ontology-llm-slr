@@ -6,4 +6,5 @@
 *.egg
 *.swp
 **/.virtual_documents/
+*.pdf
 
