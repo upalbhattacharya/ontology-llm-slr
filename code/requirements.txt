@@ -1,5 +1,4 @@
 acl-anthology>=0.5.3
 arxiv>=2.2.0
 arxiv2bib>=1.0.8
-asreview
-asreview-datatools>=1.4
+polars>=1.34.0

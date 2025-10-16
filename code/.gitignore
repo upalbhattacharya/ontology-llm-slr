@@ -7,4 +7,5 @@
 *.swp
 **/.virtual_documents/
 *.pdf
+**/.ipynb_checkpoints
 
